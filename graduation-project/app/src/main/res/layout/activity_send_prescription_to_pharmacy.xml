@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SendPrescriptionToPharmacy">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_main"
+        android:minHeight="200dp"
+        android:orientation="vertical"
+        tools:context=".SendPrescriptionToPharmacy">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Prescription ID:"
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.rey.material.widget.TextView
+                android:id="@+id/pre_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pre ID"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Doctor's Name: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.rey.material.widget.TextView
+                android:id="@+id/doc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doc Name"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Patient's Name: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.rey.material.widget.TextView
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient Name"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Date Prescription: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.rey.material.widget.TextView
+                android:id="@+id/date_pre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Pre"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Name1: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Name1"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Quantity1: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_quantity1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Quantity1"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Choose Pharmacy For Drug1: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+            
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/pharmacy1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#ffffff"
+                android:background="#80FFFFFF"
+                android:visibility="visible"
+                app:hintText="Pharmacy" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_send_drug_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="80dp"
+                android:background="#5f000000"
+                android:text="Send To Pharmacy Drug 1"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:fButtonColor="#FF0000"
+                app:shadowColor="#9E6F6D6D"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Name2: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Name2"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Quantity2: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_quantity2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Quantity2"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Choose Pharmacy For Drug2: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/pharmacy2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#ffffff"
+                android:background="#80FFFFFF"
+                android:visibility="visible"
+                app:hintText="Pharmacy" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_send_drug_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="80dp"
+                android:background="#5f000000"
+                android:text="Send To Pharmacy Drug 2"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:fButtonColor="#FF0000"
+                app:shadowColor="#9E6F6D6D"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Name3: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Name3"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Quantity3: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_quantity3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Quantity3"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Choose Pharmacy For Drug3: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/pharmacy3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#ffffff"
+                android:background="#80FFFFFF"
+                android:visibility="visible"
+                app:hintText="Pharmacy" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_send_drug_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="80dp"
+                android:background="#5f000000"
+                android:text="Send To Pharmacy Drug 3"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:fButtonColor="#FF0000"
+                app:shadowColor="#9E6F6D6D"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Name4: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Name4"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Quantity4: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_quantity4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Quantity4"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Choose Pharmacy For Drug4: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/pharmacy4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#ffffff"
+                android:background="#80FFFFFF"
+                android:visibility="visible"
+                app:hintText="Pharmacy" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_send_drug_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="80dp"
+                android:background="#5f000000"
+                android:text="Send To Pharmacy Drug 4"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:fButtonColor="#FF0000"
+                app:shadowColor="#9E6F6D6D"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Name5: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_name5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Name5"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Drug Quantity5: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/drug_quantity5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drug Quantity5"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Choose Pharmacy For Drug5: "
+                android:padding="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/pharmacy5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#ffffff"
+                android:background="#80FFFFFF"
+                android:visibility="visible"
+                app:hintText="Pharmacy" />
+
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btn_send_drug_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="#5f000000"
+                    android:text="Send To Pharmacy Drug 5"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="15dp"
+                    app:fButtonColor="#FF0000"
+                    app:shadowColor="#9E6F6D6D"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

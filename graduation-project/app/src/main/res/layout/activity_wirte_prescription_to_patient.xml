@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    tools:context=".WritePrescriptionToPatient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Doctor's Name: "
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textColorHint="#FF0000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/doc_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Doctor's Id: "
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textColorHint="#FF0000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/doc_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="12"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#80FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Medicine 1: "
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textColorHint="#FF0000"
+                            android:textSize="18sp" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/drug_name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="Medicine1" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_cap1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Times" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_days1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Days" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="12"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#80FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Medicine 2: "
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textColorHint="#FF0000"
+                            android:textSize="18sp" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/drug_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="Medicine2" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_cap2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Times" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_days2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Days" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="12"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#80FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Medicine 3: "
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textColorHint="#FF0000"
+                            android:textSize="18sp" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/drug_name3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="Medicine3" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_cap3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Times" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_days3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Days" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="12"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#80FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Medicine 4: "
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textColorHint="#FF0000"
+                            android:textSize="18sp" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/drug_name4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="Medicine4" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_cap4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Times" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_days4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Days" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="12"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#80FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Medicine 5: "
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textColorHint="#FF0000"
+                            android:textSize="18sp" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/drug_name5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="Medicine5" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_cap5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Times" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/how_many_days5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="4"
+                            app:hintText="How Many Days" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/add_spnr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fab_add"
+                    app:fab_colorNormal="#FF0000"
+                    fab:fab_size="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#80FFFFFF"
+                        android:hint="Choose patient: "
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="#fff"
+                        android:textColorHint="#FF0000"
+                        android:textSize="18sp" />
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/patient_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#80FFFFFF"
+                        app:hintText="ID-Patient's Name" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom">
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btn_send_prescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="80dp"
+                        android:layout_weight="1"
+                        android:background="#5f000000"
+                        android:minHeight="60dp"
+                        android:text="Send Prescription"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="15dp"
+                        app:fButtonColor="#FF0000"
+                        app:shadowColor="#9E6F6D6D"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="5dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

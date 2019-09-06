@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".ProfilePatient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#92000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient's UserName:"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:textColorHint="#ffffff" />
+        
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="User Name"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="#fff"
+            app:met_textColorHint="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient's Password:"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:textColorHint="#ffffff" />
+        
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Old Password Added Automatically"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="#fff"
+            app:met_textColorHint="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient's Email:"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:textColorHint="#ffffff" />
+        
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="#fff"
+            app:met_textColorHint="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient's Phone:"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:textColorHint="#ffffff" />
+        
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Phone Number"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="#fff"
+            app:met_textColorHint="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient's Address:"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:textColorHint="#ffffff" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Address"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:met_singleLineEllipsis="true"
+            app:met_textColor="#fff"
+            app:met_textColorHint="#ffffff" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/patient_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="80dp"
+            android:background="#5f000000"
+            android:minHeight="60dp"
+            android:text="Edit"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            app:fButtonColor="#FF0000"
+            app:shadowColor="#9E6F6D6D"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

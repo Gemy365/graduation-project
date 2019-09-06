@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DoctorHome"
+    tools:showIn="@layout/app_bar_doctor_home">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's UserName:"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#ffffff" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/doctor_username"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Doctor's UserName"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Email:"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#ffffff" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/doctor_email"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Phone:"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#ffffff" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/doctor_phone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Phone Number"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Address:"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#ffffff" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/doctor_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Address"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name:"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#ffffff" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/doctor_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Full Name"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#ffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

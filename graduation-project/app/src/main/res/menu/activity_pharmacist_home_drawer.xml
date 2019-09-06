@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/all_drugs_for_pharmacy"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="AllDrugsForPharmacy" />
+        <item
+            android:id="@+id/list_of_drugs_pharmacy"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="ListOfDrugsPharmacy" />
+        <item
+            android:id="@+id/limit_of_drugs_pharmacy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="LimitOfDrugsPharmacy" />
+    </group>
+
+</menu>

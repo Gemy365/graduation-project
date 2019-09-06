@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Connection With PHP</string>
+
+    <!-- <u> Tag To Make Line Under Word -->
+    <string name="forget_pwd"><u>Forgot Password?</u></string>
+    <string name="title_activity_doctor_home">DoctorHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_patient_home">PatientHome</string>
+    <string name="title_activity_pharmacist_home">PharmacistHome</string>
+</resources>

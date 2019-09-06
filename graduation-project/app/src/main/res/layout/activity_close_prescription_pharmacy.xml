@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    tools:context=".ClosePrescriptionPharmacy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ClosePrescriptionPharmacy">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Prescription ID : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_pre_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Pre ID : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Drug Name : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_drug_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Drug Name : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Drug ID : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_drug_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Drug ID : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Quantity : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Quantity : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Patinet Name : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Patinet Name : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Doc Name : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_doc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Doc Name : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Date : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Date : "
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/close_prescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="80dp"
+            android:background="#5f000000"
+            android:text="Prepare Order"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            app:fButtonColor="#FF0000"
+            app:shadowColor="#9E6F6D6D"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.myconnectionwithphp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Allow Using Camera. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:node="replace">
+        <activity android:name=".ProfilePharmacist"></activity>
+        <activity android:name=".ClosePrescriptionPharmacy" />
+        <activity android:name=".ListOfOrderPharmacy" />
+        <activity android:name=".LimitOfDrugsPharmacy" />
+        <activity android:name=".ListOfDrugsPharmacy" />
+        <activity android:name=".AllDrugsForPharmacy" />
+        <activity android:name=".SavedPrescriptionPatient" />
+        <activity android:name=".QRCodeActivity" />
+        <activity
+            android:name=".PharmacistHome"
+            android:label="@string/title_activity_pharmacist_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PatientSignUp" />
+        <activity android:name=".PatientSignIn" />
+        <activity android:name=".DoctorSignIn" />
+        <activity android:name=".PharmacistSignIn" />
+        <activity android:name=".WritePrescriptionToPatient" />
+        <activity
+            android:name=".DoctorHome"
+            android:label="@string/title_activity_doctor_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PatientHome"
+            android:label="@string/title_activity_patient_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ReadPrescriptionsFromDoctor" />
+        <activity android:name=".SendPrescriptionToPharmacy" />
+        <activity android:name=".ProfilePatient" />
+        <activity android:name=".ProfileDoctor" />
+        <activity android:name=".SavedPrescriptionDoc" />
+    </application>
+
+</manifest>

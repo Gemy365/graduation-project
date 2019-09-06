@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".PatientSignIn">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department of patients"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#92000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:inputType="text"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="18sp"
+                app:met_baseColor="#fff"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                app:met_primaryColor="#fff"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="#ffffff" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_username"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="18sp"
+                app:met_baseColor="#fff"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                app:met_primaryColor="#fff"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="#ffffff" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_signin"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="80dp"
+                android:layout_weight="1"
+                android:background="#5f000000"
+                android:minHeight="50dp"
+                android:text="Log In"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:fButtonColor="#000000"
+                app:shadowColor="#9E6F6D6D"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_signup"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="80dp"
+                android:layout_weight="1"
+                android:background="#5f000000"
+                android:minHeight="50dp"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:fButtonColor="#000000"
+                app:shadowColor="#9E6F6D6D"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
